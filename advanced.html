@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Google Search</title>
+        <script src="https://kit.fontawesome.com/b3e8690927.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+        div {
+            margin-bottom: 30px;
+        }
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+        input {
+            height: 30px;
+            width: 500px;
+        }
+        #submit-button {
+            position: absolute;
+            right: 720px;
+            color:white;
+            background-color: #3b83c6;
+            font-weight: 500;
+            height: 30px;
+            width: 180px;
+            font-size: medium;
+            border-radius: 5px;
+            border: solid 1px;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="pages"> <a href="basic.html">Basic Google Search</a> </div> 
+            <h4>Find pages with...</h4>
+            <form action="https://google.com/search">
+                <div>
+                    <div>
+                        <label>all this words:</label>
+                        <input type="text" name="as_q"/>
+                    </div>
+                    <div>
+                        <label>this exact word or phrase:</label>
+                        <input type="text" name="as_epq"/>
+                    </div>
+                    <div>
+                        <label>any of these words:</label>
+                        <input type="text" name="as_oq"/>
+                    </div>
+                    <div>
+                        <label>none of these words:</label>
+                        <input type="text" name="as_eq"/>
+                    </div>
+                    <input id="submit-button" type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+        
+            
+    </body>
